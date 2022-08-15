@@ -1,0 +1,24 @@
+XXX security is the protection of confidentiality, integrity, and availability of data.	Information security
+XXX security is the process of protecting inormation by preventing, detecting, and responding to attacks.	Cyber security
+What are the elements of the CIA triad?	Confidentiality, Integrity, and Availability
+ISO XXX defines a Information Security Management System (ISMS)	27001
+ISO XXX describes a code of practise for information security management	27002
+ISO XXX provides detailed implementation advice	27003
+ISO XXX describes metrics for monitoring and measuring security in an organization	27004
+ISO XXX defines a high level risk management system for cyber risks	27005
+ISO XXX defines the requirements for bodies which wish to act as certifiers for ISO compliance	27006
+What is a threat?	A potential danger to an asset.
+What is a vulnerability?	A weakness in the design or implementation of a system.
+A unique identifier for a vulnerability.	CVE (Common Vulnerabilities and Exposure) ID.
+Where can you find a list of CVEs?	In the National Vulnerability Database -- http://nvd.nist.gov
+What is an exploit?	A piece of software, tool, or technique which takes advantage of a vulnerability.
+What is a zero day exploit?	A exploit for a vulnerability which has not been previously reported.
+What is a risk?	The probability that a given threat will be manifested.
+What is residual risk?	The remaining risk once safeguards and controls have been implemented.
+What is a threat actor?	Individuals or groups who perform an attack.
+What are types of threat actors?	Script kiddies; organized crime groups; state sponsored groups; hacktivists; terrorists.
+Research about existing and emerging threats to assets is called...	...threat intelligence.
+What are indicators of compromise?	Pieces of forensic data, such as data found in system log entries or files, that identify potentially malicious activity on a system or network.
+Individuals who perform ethical hacking to help secure companies and organizations are called...	White Hat hackers.
+Individuals who perform illegal activities, such as organized cyber crime.	Black Hat hackers.
+Individuals who&nbsp;<i>usually</i>&nbsp;follow the law, but sometimes do not.	Gray Hat hackers.
