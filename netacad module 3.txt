@@ -22,5 +22,13 @@ What command on Windows can show current memory allocations?    rammap.exe from 
 What command on Windows shows network interface configuration details?  ipconfig
 What command on Windows can lookup DNS records? nslookup
 What command on Windows shows routing information?  netstat
+#
 What is a Windows service?  A long running daemon that can run without a user being logged in.
 How can you manage Windows services?    Either the services WMI snap in, sc.exe, or powershell.
+#
+What are the Windows log types? Event, System, and Security.
+"What is the Windows Event Log ""Error"" level used for?"   Logging significant problems.
+"What is the Windows Event Log ""Warning"" level used for?"   Warnings of possible future failure.
+"What is the Windows Event Log ""Info"" level used for?"   Successful operations.
+"What is the Windows Event Log ""Success"" audit level used for?"   Security audited events that were successful.
+"What is the Windows Event Log ""Failure"" audit level used for?"   Security audited events that were unsuccessful.
