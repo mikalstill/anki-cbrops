@@ -1,0 +1,30 @@
+#separator:tab
+#html:true
+################################################################################
+# NETACAD MODULE 19
+XXX security is the protection of confidentiality, integrity, and availability of data. Information security
+XXX security is the process of protecting information by preventing, detecting, and responding to attacks.	Cyber security
+What are the elements of the CIA triad?	Confidentiality, Integrity, and Availability.
+#
+Define Discretionary Access Control (DAC)   The least restrictive model, ACLs are used to grant users and groups access to data. Each resource has a clearly identified owner and that owner decides the access of others. For example a file on a unix filesystem.
+Define Mandatory Access Control (MAC)   The strictest model generally used in military and mission critical applications. Access is granted based on a user's security clearance by the Operating System and owner has no control over who can access. Each resource is classified by sensitivity or security label. SELinux is an example of a real world system using MAC.
+Define Role-Based Access Control (RBAC) Users are one or more roles by the systems administrator, and these roles are used to grant access.
+Define Attribute-Based Access Control (ABAC)    Attributes of the user, the requested resource, and environmental factors such as time of day are used to determine if access should be granted.
+Define Time-based Access Control (TAC)  Access is granted based on time of day and the day.
+#
+What does AAA stand for?    Authentication, Authorization, Accounting.
+#
+Which of TACACS+ or RADIUS is an open standard? RADIUS
+What protocol and port does TACACS+ use?    TCP port 49
+What protocol and port does RADIUS use? UDP port 1812 for authentication and authorization and UDP port 813 for accounting.
+Authentication, Authorization, and Accounting are all separate steps in the ... protocol.   TACACS+
+Which of TACACS+ or RADIUS encrypts the entire packet?  TACACS+
+Which of TACACS+ or RADIUS encrypts just the password?  RADIUS
+Which of TACACS+ or RADIUS has a shared secret? RADIUS
+Which has better accounting facilities of TACACS+ and RADIUS?   RADIUS
+################################################################################
+# NETACAD MODULE 20
+What is FireEye?    A threat intelligence service.
+Name three threat intelligence sources. Cisco Talos, FireEye, MITRE CVEs.
+Define "IOC".   Indicator of Compromise.
+Define "TTP".   Tools, Techniques, and Procedures.

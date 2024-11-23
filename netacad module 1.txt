@@ -1,0 +1,46 @@
+#separator:tab
+#html:true
+################################################################################
+# NETACAD MODULE 1
+What is a threat?	A potential danger to an asset.
+What is a vulnerability?	A weakness in the design or implementation of a system.
+What is an attack?  Deliberate exploitation of a discovered weakness.
+What is the attack surface? The total sum of the vulnerabilities in a given system that are accessible to an attacker.
+What is an exploit?	A piece of software, tool, or technique which takes advantage of a vulnerability.
+What is a risk?	The probability that a given threat will be manifested.
+#
+What is a threat actor?	Individuals or groups who perform an attack.
+What are types of threat actors?	Script kiddies; organized crime groups; state sponsored groups; hacktivists; terrorists.
+Individuals who perform ethical hacking to help secure companies and organizations are called...	White Hat hackers.
+Individuals who perform illegal activities, such as organized cyber crime.	Black Hat hackers.
+Individuals who&nbsp;<i>usually</i>&nbsp;follow the law, but sometimes do not.	Gray Hat hackers.
+#
+What is Structured Thread Information eXpression (STIX) A language for sharing threat information, originally developed by MITRE now maintained by OASIS.
+What is Trusted Automated eXchange of Indicator Information (TAXII)?    An open transport for automated exchange of information, originally developed by MITRE and now maintained by OASIS.
+What is Cyber Observable eXpression (CybOX)?    A standardized schema for specification, capture, and characterization of events, originally developed by MITRE and now maintained by OASIS.
+What are Open Indicators of Compromise (OpenIOC)?   Machine readable IOC data.
+What is Open Command and Control (OpenC2)?  An open command and control system for distributed cyber defence technologies.
+#
+What is PII?	Personally Identifying Information
+What is PHI?	Protected Health Information
+What is PSI?	Personal Security Information (usernames, passwords, etc)
+What US legislation covers PHI?	HIPPA
+What EU legislation covers PHI?	GDPR
+#
+What is a zero day exploit?	A exploit for a vulnerability which has not been previously reported.
+What is residual risk?	The remaining risk once safeguards and controls have been implemented.
+#
+What is a virus?	A self-replicating program which infects hosts to perform undesirable actions. It requires human interaction to replicate.
+What is a worm?	A self-replicating program which does not require human interaction to replicate.
+What is a logic bomb?	Malicious code injected into a legitimate application.
+What is a trojan horse?	A malicious application which uses social engineering to convince the user to install it.
+#
+Attacks which gather information are... Reconnaissance attacks.
+Attacks which take advantage of a vulnerability to gain access are...   Access attacks.
+#
+Zombies Infected machines.
+Bot The malware which infects a machine.
+Botnet  A group of zombies.
+Handlers    Command and control (CnC / C2) servers.
+Botmaster   The threat actor in command of a botnet.
+
