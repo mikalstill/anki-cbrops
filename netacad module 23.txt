@@ -2,3 +2,27 @@
 #html:false
 ################################################################################
 # NETACAD MODULE 23
+Network profiling is the collection of ...;baseline behaviour such as sesion duration, throughput, ports, and IP Addresses.
+Server profiling is the collection of ...;listening ports, users and accounts, service accounts, and the software environment.
+#
+Who manages the Common Vulnerability Scoring System (CVSS)?;The Forum of Incident Response and Security Teams (FIRST) has been designated as the custodian of the CVSS to promote its adoption globally.
+What is in the CVSS base metric group?;Exploitability (attack vector, complexity, privileges required, user interaction required), and impact (based around the CIA triad).
+What is in the CVSS temporal metric group?;Exploit maturity, remediation level, and report confidence.
+What is in the CVSS environmental metric group?;Modified base metrics based on the particular software.
+What does a CVSS score below 4 mean?;The important of the vulnerability is low.
+What does a CVSS score between 4 and 7 mean?;The importance of the vulnerability is medium.
+What does a CVSS score between 7 than 9 mean?;The importance of the vulnerability is high.
+What does a CVSS score greater than 9 mean?;The vulnerability is critical.
+#
+What is a CVE?;Common Vulnerability and Exposures (CVE), a unique vulnerability identifier managed by MITRE. CVEs are issued by CVE Numbering Authorities (CNAs). Aggregated at cve.mitre.org, and nvd.nist.org. Used as a reference to a specific vulnerability to aid in searching.
+What is the NVD?;National Vulnerability Database (NVD), a database of CVEs and their associated CVSS maintained by the US Federal Government.
+Where can you find a list of CVEs?;In the National Vulnerability Database -- http://nvd.nist.gov
+#
+What is the vulnerability management lifecycle?;Discover (inventory all assets across the network), prioritize assets (categorize assets into groups or business units, and assign a business value to asset groups), assess 9determine a baseline risk profile), report (measure the level of business risk, document a security plan, monitor suspicious activity, and describe known vulnerabilities), remediate (prioritize according to business risk and address vulnerabilities in order of risk), and verify: (through follow-up audits).
+#
+ISO ... defines a Information Security Management System (ISMS);27001
+ISO ... describes a code of practice for information security management;27002
+ISO ... provides detailed implementation advice;27003
+ISO ... describes metrics for monitoring and measuring security in an organization;27004
+ISO ... defines a high level risk management system for cyber risks;27005
+ISO ... defines the requirements for bodies which wish to act as certifiers for ISO compliance;27006

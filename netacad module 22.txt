@@ -2,3 +2,14 @@
 #html:false
 ################################################################################
 # NETACAD MODULE 22
+What are endpoints?;Devices connected to the network.
+What are the three types of host based antivirus / antimalware?;Signature, heuristic, and behavioural.
+What is Cisco AMP?;A Host-based Intrusion Detection System (HIDS) product.
+What is Network Admission Control (NAC)?;Network access control (NAC) is a security solution that enforces policy on devices that access networks to increase network visibility and reduce risk.
+What is a host based firewall on Windows?;Windows Defender.
+What is a host based firewall on Linux?;iptables.
+#
+Cisco Advanced Malware Protection (AMP) uses ... to execute malware, analyse its behaviour, and then produce signatures.;Cisco Threat Grid Glovebox
+... is a popular free sandbox system.;Cuckoo sandbox
+... is a popular free malware signature lookup site;VirusTotal
+... is an online malware sandbox offering which offers rich reporting including screenshots.;ANY.RUN

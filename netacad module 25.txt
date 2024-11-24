@@ -2,3 +2,4 @@
 #html:false
 ################################################################################
 # NETACAD MODULE 25
+What is lsass.exe?;Part of Microsoft Windows, its the local security authority. Often faked by malware, often in incorrect locations in the filesystem.
