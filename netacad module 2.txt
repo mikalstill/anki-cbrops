@@ -1,23 +1,23 @@
-#separator:tab
-#html:true
+#separator:semicolon
+#html:false
 ################################################################################
 # NETACAD MODULE 2
-What is the role of a Tier 1 SOC worker?   Monitor incoming alerts, verify that an incident has really occurred.
-What is the role of a Tier 2 SOC worker?    Incident response. Investigate incidents and advise remediation actions.
-What is the role of a Tier 3 SOC worker? Threat Hunter. Expert-level skill in network, endpoint, threat intel, and malware reverse engineering. Implementing detection tooling.
-What is the role of a SOC manager?  Manage SOC resources.
+What is the role of a Tier 1 SOC worker?;Monitor incoming alerts, verify that an incident has really occurred.
+What is the role of a Tier 2 SOC worker?;Incident response. Investigate incidents and advise remediation actions.
+What is the role of a Tier 3 SOC worker?;Threat Hunter. Expert-level skill in network, endpoint, threat intel, and malware reverse engineering. Implementing detection tooling.
+What is the role of a SOC manager?;Manage SOC resources.
 #
-What does SIEM stand for?	Security Information and Event Management
-What does SOAR stand for?	Security Orchestration, Automation, and Response.
-"What does the SOC metric ""dwell time"" measure?"	Time before first detection of an incident.
-"What does the SOC metric ""MTTD"" measure?"	Mean Time To Detect an incident.
-"What does the SOC metric ""MTTR"" mean?"	Man Time To Respond to an incident.
-"What does the SOC metric ""MTTC"" mean?"	Mean Time To Contain an incident.
-"What does the SOC metric ""ToC"" mean?"	Time To Control.
+What does SIEM stand for?;Security Information and Event Management
+What does SOAR stand for?;Security Orchestration, Automation, and Response.
+"What does the SOC metric ""dwell time"" measure?";Time before first detection of an incident.
+"What does the SOC metric ""MTTD"" measure?";Mean Time To Detect an incident.
+"What does the SOC metric ""MTTR"" mean?";Man Time To Respond to an incident.
+"What does the SOC metric ""MTTC"" mean?";Mean Time To Contain an incident.
+"What does the SOC metric ""ToC"" mean?";Time To Control.
 #
-What does the SOC metric dwell time mean? How long threat actors have access to the network before being detected and access revoked.
-What are the four SOC metrics?  Dwell Time, Mean Time to Detect, Mean Time to Respond, Mean Time to Contain.
-What is Time to Control?    The time it takes to stop the spread of malware in the network.
+What does the SOC metric dwell time mean?;How long threat actors have access to the network before being detected and access revoked.
+What are the four SOC metrics?;Dwell Time, Mean Time to Detect, Mean Time to Respond, Mean Time to Contain.
+What is Time to Control?;The time it takes to stop the spread of malware in the network.
 #
-What issues CISSP certifications?	(ISC)2
-Who issues CySA+ certifications?	CompTIA.
+What issues CISSP certifications?;(ISC)2
+Who issues CySA+ certifications?;CompTIA.

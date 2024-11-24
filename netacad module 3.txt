@@ -1,34 +1,34 @@
-#separator:tab
-#html:true
+#separator:semicolon
+#html:false
 ################################################################################
 # NETACAD MODULE 3
-What two Windows accounts are created on installation but disabled by default?  Administrator and guest.
-What permissions does the first manually created account on Windows have?   Administrator.
-What NTFS attribute stores the file data?   $DATA
-How do you access Alternate Data Streams (ADSs) in NTFS?    Use a colon after the filename to name the stream, for example foo.txt:extra.
-How can you list the Alternate Data Streams for an NTFS file?   dir /r
-What command shows Windows startup settings?    msconfig.exe
-For a cold boot with no restore from hiberation, what are the Windows boot steps?   BIOS or UEFI; read Boot Configuration Database (BCD); winload.exe; Kernel Mode Code Signing (KMCS) verifies kernel drivers; ntoskrnl.exe; Session Manager SubSystem (SMSS) reads the registry to create the user environment and starts winlogin service to prepare the desktop.
-What command can edit the registry on Windows?  regedit.exe
-What is stored in HKEY_LOCAL_MACHINE in the Windows registry?   System related information.
-What is stored in HKEY_CURRENT_USER in the Windows registry?   Information about the currently logged in user.
-What is stored in HKEY_USERS in the Windows registry?   Information about all user accounts on the host.
-What is stored in HKEY_CLASSES_ROOT in the Windows registry?   Information about Object Linking and Embedding (OLE) registrations.
-What is stored in HKEY_CURRENT_CONFIG in the Windows registry?   Information about the current hardware profile.
-What are the registry entry data types on Windows?  REG_BINARY, REG_DWORD (a number), REG_SZ (a string).
-What command manages local users and groups?    lusrmgr.msc
-What command can manage accounts, sessions and shares on Windows?  net
-What command on Windows can show current memory allocations?    rammap.exe from the sysinternals suite.
-What command on Windows shows network interface configuration details?  ipconfig
-What command on Windows can lookup DNS records? nslookup
-What command on Windows shows routing information?  netstat
+What two Windows accounts are created on installation but disabled by default?;Administrator and guest.
+What permissions does the first manually created account on Windows have?;Administrator.
+What NTFS attribute stores the file data?;$DATA
+How do you access Alternate Data Streams (ADSs) in NTFS?;Use a colon after the filename to name the stream, for example foo.txt:extra.
+How can you list the Alternate Data Streams for an NTFS file?;dir /r
+What command shows Windows startup settings?;msconfig.exe
+For a cold boot with no restore from hibernation, what are the Windows boot steps?;BIOS or UEFI, read Boot Configuration Database (BCD), winload.exe, Kernel Mode Code Signing (KMCS) verifies kernel drivers, ntoskrnl.exe, Session Manager SubSystem (SMSS) reads the registry to create the user environment and starts winlogin service to prepare the desktop.
+What command can edit the registry on Windows?;regedit.exe
+What is stored in HKEY_LOCAL_MACHINE in the Windows registry?;System related information.
+What is stored in HKEY_CURRENT_USER in the Windows registry?;Information about the currently logged in user.
+What is stored in HKEY_USERS in the Windows registry?;Information about all user accounts on the host.
+What is stored in HKEY_CLASSES_ROOT in the Windows registry?;Information about Object Linking and Embedding (OLE) registrations.
+What is stored in HKEY_CURRENT_CONFIG in the Windows registry?;Information about the current hardware profile.
+What are the registry entry data types on Windows?;REG_BINARY, REG_DWORD (a number), REG_SZ (a string).
+What command manages local users and groups?;lusrmgr.msc
+What command can manage accounts, sessions and shares on Windows?;net
+What command on Windows can show current memory allocations?;rammap.exe from the sysinternals suite.
+What command on Windows shows network interface configuration details?;ipconfig
+What command on Windows can lookup DNS records?;nslookup
+What command on Windows shows routing information?;netstat
 #
-What is a Windows service?  A long running daemon that can run without a user being logged in.
-How can you manage Windows services?    Either the services WMI snap in, sc.exe, or powershell.
+What is a Windows service?;A long running daemon that can run without a user being logged in.
+How can you manage Windows services?;Either the services WMI snap in, sc.exe, or powershell.
 #
-What are the Windows log types? Event, System, and Security.
-"What is the Windows Event Log ""Error"" level used for?"   Logging significant problems.
-"What is the Windows Event Log ""Warning"" level used for?"   Warnings of possible future failure.
-"What is the Windows Event Log ""Info"" level used for?"   Successful operations.
-"What is the Windows Event Log ""Success"" audit level used for?"   Security audited events that were successful.
-"What is the Windows Event Log ""Failure"" audit level used for?"   Security audited events that were unsuccessful.
+What are the Windows log types?;Event, System, and Security.
+"What is the Windows Event Log ""Error"" level used for?";Logging significant problems.
+"What is the Windows Event Log ""Warning"" level used for?";Warnings of possible future failure.
+"What is the Windows Event Log ""Info"" level used for?";Successful operations.
+"What is the Windows Event Log ""Success"" audit level used for?";Security audited events that were successful.
+"What is the Windows Event Log ""Failure"" audit level used for?";Security audited events that were unsuccessful.

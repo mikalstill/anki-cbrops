@@ -1,4 +1,7 @@
-#separator:tab
-#html:true
-################################################################################
+#separator:semicolon
+#html:false
 # NETACAD MODULE 20
+What is FireEye?;A threat intelligence service.
+Name three threat intelligence sources.;Cisco Talos, FireEye, MITRE CVEs.
+Define "IOC".;Indicator of Compromise.
+Define "TTP".;Tools, Techniques, and Procedures.

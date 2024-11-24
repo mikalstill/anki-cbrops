@@ -1,16 +1,16 @@
-#separator:tab
-#html:true
+#separator:semicolon
+#html:false
 ################################################################################
 # NETACAD MODULE 4
 #
 # This is probably the weakest one of these because I didn't take great notes
 # as I do linux full time for work...
 #
-What protocol and port is telnet?   TCP port 23.
-What protocol and port is SMTP? TCP port 25.
-What protocol and port is DNS?  Both TCP and UDP ports 53. Normally UDP unless the response is too large to fit in a UDP datagram (like zone transfers).
-What protocol and port is HTTP? TCP port 80.
-What protocol and port is HTTPS?    TCP port 443.
-Where does syslog on Linux log to by default?    Either /var/log/syslog or /var/log/messages.
-Where are authentication logs on Linux? Either /var/log/auth.log or /var/log/secure.
-What command can show you kernel log messages on Linux? dmesg.
+What protocol and port is telnet?;TCP port 23.
+What protocol and port is SMTP?;TCP port 25.
+What protocol and port is DNS?;Both TCP and UDP ports 53. Normally UDP unless the response is too large to fit in a UDP datagram (like zone transfers).
+What protocol and port is HTTP?;TCP port 80.
+What protocol and port is HTTPS?;TCP port 443.
+Where does syslog on Linux log to by default?;Either /var/log/syslog or /var/log/messages.
+Where are authentication logs on Linux?;Either /var/log/auth.log or /var/log/secure.
+What command can show you kernel log messages on Linux?;dmesg.

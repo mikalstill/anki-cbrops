@@ -1,12 +1,12 @@
-#separator:tab
-#html:true
+#separator:semicolon
+#html:false
 ################################################################################
 # NETACAD MODULE 13
-What are the risk management options?   Accept, avoid, reduce, transfer.
-What is an example of risk avoidance?   Eliminate the activity or device which presents the risk.
-What is an example of risk reduction?   Mitigate the risk.
-What is an example of risk transfer?    The purchase of insurance.
-What are indicators of compromise?	Pieces of forensic data, such as data found in system log entries or files, that identify potentially malicious activity on a system or network.
-Research about existing and emerging threats to assets is called...	...threat intelligence.
-What is an IoC? An Indicator Of Compromise.
-What is an IaC? An Indicator of Attack.
+What are the risk management options?;Accept, avoid, reduce, transfer.
+What is an example of risk avoidance?;Eliminate the activity or device which presents the risk.
+What is an example of risk reduction?;Mitigate the risk.
+What is an example of risk transfer?;The purchase of insurance.
+What are indicators of compromise?;Pieces of forensic data, such as data found in system log entries or files, that identify potentially malicious activity on a system or network.
+Research about existing and emerging threats to assets is called...;...threat intelligence.
+What is an IoC?;An Indicator Of Compromise.
+What is an IaC?;An Indicator of Attack.

@@ -1,13 +1,13 @@
-#separator:tab
-#html:true
+#separator:semicolon
+#html:false
 ################################################################################
 # NETACAD MODULE 5
-What is a PDU?  Protocol Data Unit.
-What is the PDU at the Application Layer of the OSI model?  Data
-What is the PDU at the Transport Layer of the OSI model?  TCP: Segment; UDP: Datagram
-What is the PDU at the Network Layer of the OSI model?  Packet
-What is the PDU at the Data Link Layer of the OSI model?    Frame
-What is the PDU at the Physical Layer of the OSI model?  Bit
-What is the address component at the Transport Layer of the OSI model?    The protocol and port.
-What is the address component at the Network Layer of the OSI model?    IP Address.
-What is the address component at the Data Layer of the OSI model?   MAC Address.
+What is a PDU?;Protocol Data Unit.
+What is the PDU at the Application Layer of the OSI model?;Data
+What is the PDU at the Transport Layer of the OSI model?;TCP: Segment, UDP: Datagram
+What is the PDU at the Network Layer of the OSI model?;Packet
+What is the PDU at the Data Link Layer of the OSI model?;Frame
+What is the PDU at the Physical Layer of the OSI model?;Bit
+What is the address component at the Transport Layer of the OSI model?;The protocol and port.
+What is the address component at the Network Layer of the OSI model?;IP Address.
+What is the address component at the Data Layer of the OSI model?;MAC Address.

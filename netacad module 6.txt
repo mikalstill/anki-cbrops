@@ -1,5 +1,5 @@
-#separator:tab
-#html:true
+#separator:semicolon
+#html:false
 ################################################################################
 # NETACAD MODULE 6
 #
@@ -7,61 +7,61 @@
 # fiddly to know and I suspect might not be likely on the exam. I might be
 # wrong there though...
 #
-What is a Hub?  Layer 1. A simple repeater. All received packets are flooded out all interfaces except the one the packet was received on. Traffic is half duplex as all interfaces on the hub form a single collision domain.
-What is a Switch? Layer 2. Maintains a MAC address table of addresses per port, and only floods traffic when it doesn't have a MAC address table entry for the recipient. If it does have one, only the recorded interface is used. Can be a full duplex device, as each interface is its own collision domain.
-What is a Bridge? Layer 2. Interconnect two layer 2 networks. The concept is largely obsolete now, but they perform buffering and speed translation between these networks. Bridging is not routing, the two joined networks effectively become one.
-What is a Router? Layer 3. Maintain a route table and move traffic between otherwise separate networks.
+What is a Hub?;Layer 1. A simple repeater. All received packets are flooded out all interfaces except the one the packet was received on. Traffic is half duplex as all interfaces on the hub form a single collision domain.
+What is a Switch?;Layer 2. Maintains a MAC address table of addresses per port, and only floods traffic when it doesn't have a MAC address table entry for the recipient. If it does have one, only the recorded interface is used. Can be a full duplex device, as each interface is its own collision domain.
+What is a Bridge?;Layer 2. Interconnect two layer 2 networks. The concept is largely obsolete now, but they perform buffering and speed translation between these networks. Bridging is not routing, the two joined networks effectively become one.
+What is a Router?;Layer 3. Maintain a route table and move traffic between otherwise separate networks.
 #
-What are the layers in the OSI model?   Bottom to top: Please Do Not Teach Students Pointless Acronyms (PDNTSPA). Physical; Data link; Network; Transport; Session; Presentation; Application.
-What are the layers of the TCP/IP model?    Application; Transport; Network; Data Link.
-What OSI Layers map to the TCP/IP Application Layer?    Application, Presentation, Session (the top three).
-What OSI Layers map to the TCP/IP Data Link Layer?  Data Link, Physcial (the bottom two).
+What are the layers in the OSI model?;Bottom to top: Please Do Not Teach Students Pointless Acronyms (PDNTSPA). Physical, Data link, Network, Transport, Session, Presentation, Application.
+What are the layers of the TCP/IP model?;Application, Transport, Network, Data Link.
+What OSI Layers map to the TCP/IP Application Layer?;Application, Presentation, Session (the top three).
+What OSI Layers map to the TCP/IP Data Link Layer?;Data Link, Physical (the bottom two).
 #
-What IEEE specification covers the Data Link Layer in the OSI model for Ethernet?    802.2
-What IEEE specification covers the Physcial Layer in the OSI model for Ethernet?    802.3
+What IEEE specification covers the Data Link Layer in the OSI model for Ethernet?;802.2
+What IEEE specification covers the Physical Layer in the OSI model for Ethernet?;802.3
 #
-How does Ethernet handle collisions?    Using Carrier Sense Multiple Access / Collision Detection (CSMA/CD). Devices check for a carrier before sending, if a collision is detected during sending devices wait a random amount of time before retrying.
+How does Ethernet handle collisions?;Using Carrier Sense Multiple Access / Collision Detection (CSMA/CD). Devices check for a carrier before sending, if a collision is detected during sending devices wait a random amount of time before retrying.
 #
-What are three characteristics of IPv4? It is connectionless, best effort, and media independent.
-How bit are IPv4 addresses? 32 bits.
-What protocol number is ICMP in IPv4?   1
-What protocol number is TCP in IPv4?    6
-What protocol number is UDP in IPv4?    17
-What protocol number is OSPF in IPv4?   89
+What are three characteristics of IPv4?;It is connection-less, best effort, and media independent.
+How bit are IPv4 addresses?;32 bits.
+What protocol number is ICMP in IPv4?;1
+What protocol number is TCP in IPv4?;6
+What protocol number is UDP in IPv4?;17
+What protocol number is OSPF in IPv4?;89
 #
-What is the netmask in a class A IPv4 netblock? The first 8 bits of the address.
-What is the netmask in a class B IPv4 netblock? The first 16 bits of the address.
-What is the netmask in a class C IPv4 netblock? The first 24 bits of the address.
-What is the first octet in a Class A IPv4 address?  0xxxxxxx (0-127) 0 and 127 networks are reserved.
-What is the first octet in a Class B IPv4 address?  10xxxxxx (128-191).
-What is the first octet in a Class C IPv4 address?  110xxxxx (192-223).
-What is the first octet in a Class D IPv4 address?  1110xxxx (224-239).
-What is the first octet in a Class E IPv4 address?  1111xxxx (240-255).
-What are class D addresses used for in IPv4?    Multicast.
-What are class E addresses used for in IPv4?    Reserved for future use.
-What IP Addresses are reserved in a IPv4 netblock?  First address (all 0s) in a netblock is the network address, the last address (all 1s) in a netblock is the broadcast address.
-What are the RFC1918 IPv4 netblocks?    Private non-routable addresses. 10.0.0.0/8, 172.16.0.0/12, and 192.168.0.0/16.
+What is the netmask in a class A IPv4 netblock?;The first 8 bits of the address.
+What is the netmask in a class B IPv4 netblock?;The first 16 bits of the address.
+What is the netmask in a class C IPv4 netblock?;The first 24 bits of the address.
+What is the first octet in a Class A IPv4 address?;0xxxxxxx (0-127) 0 and 127 networks are reserved.
+What is the first octet in a Class B IPv4 address?;10xxxxxx (128-191).
+What is the first octet in a Class C IPv4 address?;110xxxxx (192-223).
+What is the first octet in a Class D IPv4 address?;1110xxxx (224-239).
+What is the first octet in a Class E IPv4 address?;1111xxxx (240-255).
+What are class D addresses used for in IPv4?;Multicast.
+What are class E addresses used for in IPv4?;Reserved for future use.
+What IP Addresses are reserved in a IPv4 netblock?;First address (all 0s) in a netblock is the network address, the last address (all 1s) in a netblock is the broadcast address.
+What are the RFC1918 IPv4 netblocks?;Private non-routable addresses. 10.0.0.0/8, 172.16.0.0/12, and 192.168.0.0/16.
 #
-How many addresses are there in a /24 IPv4 CIDR netblock?    256
-How many addresses are there in a /25 IPv4 CIDR netblock?    128
-How many addresses are there in a /26 IPv4 CIDR netblock?    64
-How many addresses are there in a /27 IPv4 CIDR netblock?    32
-How many addresses are there in a /28 IPv4 CIDR netblock?    16
-How many addresses are there in a /29 IPv4 CIDR netblock?    8
-How many addresses are there in a /30 IPv4 CIDR netblock?    4
-How many addresses are there in a /31 IPv4 CIDR netblock?    2
-How many addresses are there in a /32 IPv4 CIDR netblock?    1
+How many addresses are there in a /24 IPv4 CIDR netblock?;256
+How many addresses are there in a /25 IPv4 CIDR netblock?;128
+How many addresses are there in a /26 IPv4 CIDR netblock?;64
+How many addresses are there in a /27 IPv4 CIDR netblock?;32
+How many addresses are there in a /28 IPv4 CIDR netblock?;16
+How many addresses are there in a /29 IPv4 CIDR netblock?;8
+How many addresses are there in a /30 IPv4 CIDR netblock?;4
+How many addresses are there in a /31 IPv4 CIDR netblock?;2
+How many addresses are there in a /32 IPv4 CIDR netblock?;1
 #
-How many usable addresses are there in a /24 IPv4 CIDR netblock?    254
-How many usable addresses are there in a /25 IPv4 CIDR netblock?    126
-How many usable addresses are there in a /26 IPv4 CIDR netblock?    62
-How many usable addresses are there in a /27 IPv4 CIDR netblock?    30
-How many usable addresses are there in a /28 IPv4 CIDR netblock?    14
-How many usable addresses are there in a /29 IPv4 CIDR netblock?    6
-How many usable addresses are there in a /30 IPv4 CIDR netblock?    2
-How many usable addresses are there in a /31 IPv4 CIDR netblock?    0
-How many usable addresses are there in a /32 IPv4 CIDR netblock?    1
+How many usable addresses are there in a /24 IPv4 CIDR netblock?;254
+How many usable addresses are there in a /25 IPv4 CIDR netblock?;126
+How many usable addresses are there in a /26 IPv4 CIDR netblock?;62
+How many usable addresses are there in a /27 IPv4 CIDR netblock?;30
+How many usable addresses are there in a /28 IPv4 CIDR netblock?;14
+How many usable addresses are there in a /29 IPv4 CIDR netblock?;6
+How many usable addresses are there in a /30 IPv4 CIDR netblock?;2
+How many usable addresses are there in a /31 IPv4 CIDR netblock?;0
+How many usable addresses are there in a /32 IPv4 CIDR netblock?;1
 #
-How many bits are in an IPv6 Address?   128.
-How many hextets are in an IPv6 Address?    16.
-How do we shorten written IPv6 Addresses?   Omit leading zeros within a hextet, use a double colon to remove runs of zero hextets.
+How many bits are in an IPv6 Address?;128.
+How many hextets are in an IPv6 Address?;16.
+How do we shorten written IPv6 Addresses?;Omit leading zeros within a hextet, use a double colon to remove runs of zero hextets.

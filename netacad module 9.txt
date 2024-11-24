@@ -1,31 +1,31 @@
-#separator:tab
-#html:true
+#separator:semicolon
+#html:false
 ################################################################################
 # NETACAD MODULE 9
-The ... layer is responsible for communications between applications.   Transport.
-Two common transport layer protocols in IPv4 are...    TCP and UDP.
-Transport layer protocols are responsible for...    Tracking individual sessions, segmentation and reassembly, identifying applications by port number, and conversation multiplexing.
-... is a transport protocol which retransmits missing segments. TCP.
-... is a transport protocol which handles out of order delivery of segments.    TCP.
-... is a connection oriented transport protocol.    TCP.
+The ... layer is responsible for communications between applications.;Transport.
+Two common transport layer protocols in IPv4 are...;TCP and UDP.
+Transport layer protocols are responsible for...;Tracking individual sessions, segmentation and reassembly, identifying applications by port number, and conversation multiplexing.
+... is a transport protocol which retransmits missing segments.;TCP.
+... is a transport protocol which handles out of order delivery of segments.;TCP.
+... is a connection oriented transport protocol.;TCP.
 #
-Which of UDP or TCP is a simpler protocol?  UDP.
-... is an unreliable transport protocol.    UDP.
-... is a faster transport protocol for small transactions.  UDP.
-... is a best effort transport protocol.    UDP.
+Which of UDP or TCP is a simpler protocol?;UDP.
+... is an unreliable transport protocol.;UDP.
+... is a faster transport protocol for small transactions.;UDP.
+... is a best effort transport protocol.;UDP.
 #
-What are the packets in a TCP handshake?    SYN, SYN ACK, ACK.
-What are the packets in a TCP session teardown? FIN, ACK, FIN, ACK.
-What does the TCP handshake achieve?    Sets an initial sequence number for the session. Establishes that the destination device is present on the network. Verifies that the destination device has an active service and is accepting requests on the destination port number that the initiating client intends to use. Informs the destination device that the source client intends to establish a communication session on that port number.
+What are the packets in a TCP handshake?;SYN, SYN ACK, ACK.
+What are the packets in a TCP session teardown?;FIN, ACK, FIN, ACK.
+What does the TCP handshake achieve?;Sets an initial sequence number for the session. Establishes that the destination device is present on the network. Verifies that the destination device has an active service and is accepting requests on the destination port number that the initiating client intends to use. Informs the destination device that the source client intends to establish a communication session on that port number.
 #
-URG, ACK, PSH, RST, SYN, and FIN are all... TCP control bits.
-The ACK TCP control bit is used for...  Acknowledgment flag used in connection establishment and session termination.
-The PSH TCP control bit is used for...  Push function, deliver the data to the receiving application immediately without buffering.
-The RST TCP control bit is used for...  Reset the connection. Used when an error or timeout occurs.
-The SYN TCP control bit is used for...  Synchronize sequence numbers during connection establishment.
-The FIN TCP control bit is used for...  No more data from sender, used in session termination to cause the session to be torn down.
+URG, ACK, PSH, RST, SYN, and FIN are all...;TCP control bits.
+The ACK TCP control bit is used for...;Acknowledgment flag used in connection establishment and session termination.
+The PSH TCP control bit is used for...;Push function, deliver the data to the receiving application immediately without buffering.
+The RST TCP control bit is used for...;Reset the connection. Used when an error or timeout occurs.
+The SYN TCP control bit is used for...;Synchronize sequence numbers during connection establishment.
+The FIN TCP control bit is used for...;No more data from sender, used in session termination to cause the session to be torn down.
 #
-What is the TCP window size?    THe number of bytes that may be sent before waiting for an ACK.
-When is the initial TCP window size negotiated? During the three way handshake.
-What is a TCP sliding window?   "Sliding windows" redefine the window size to mean the number of outstanding bytes, instead of waiting for all N bytes to be ACKed.
-What is the TCP MSS?    Maximum Segment Size (MSS), negotiated during the three way handshake. Typically the MTU minus the 40 bytes of TCP header.
+What is the TCP window size?;The number of bytes that may be sent before waiting for an ACK.
+When is the initial TCP window size negotiated?;During the three way handshake.
+What is a TCP sliding window?;"Sliding windows" redefine the window size to mean the number of outstanding bytes, instead of waiting for all N bytes to be ACKed.
+What is the TCP MSS?;Maximum Segment Size (MSS), negotiated during the three way handshake. Typically the MTU minus the 40 bytes of TCP header.
