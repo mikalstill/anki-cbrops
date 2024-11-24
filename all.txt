@@ -1,0 +1,399 @@
+#separator:semicolon
+#html:false
+What is the ethernet frame types for IPv4?;0x0800.
+What is the ethernet frame types for ARP?;0x080g
+What is the ethernet frame types for IPv6?;0x86DD
+What is a MAC address?;Sometimes called a "Burned In Address" (BIA), the address of the device at the Data Layer.
+How long is a MAC address?;6 bytes.
+What portion of a MAC address identifies the manufacturer of the device?;The first three bytes are the Organizationally Unique Identifier (OUI), which is unique to the manufacturer.
+What portion of a MAC address is unique to the device?;The last three bytes.
+What MAC address is used for the destination of an ARP request?;FF:FF:FF:FF:FF:FF (that is, it is broadcast).
+What MAC address is used for the ARP response?;The MAC address of the sender of the ARP request.
+What are two issues with ARP?;The broadcast nature of the traffic can lead to network overhead / floods, especially if a large number of machines are powered on at once. It is also vulnerable to spoofing.
+How does a switch learn MAC addresses?;The switch dynamically learns MAC addresses from the source field of frames, adding them to the to MAC address table. Cisco switches clear entries from the MAC address table after five minutes of inactivity. If the switch receives a frame where it doesn't know the interface to use, it floods the frame out all by the incoming interface. This is called an unknown unicast frame.
+The ... layer is responsible for communications between applications.;Transport.
+Two common transport layer protocols in IPv4 are...;TCP and UDP.
+Transport layer protocols are responsible for...;Tracking individual sessions, segmentation and reassembly, identifying applications by port number, and conversation multiplexing.
+... is a transport protocol which retransmits missing segments.;TCP.
+... is a transport protocol which handles out of order delivery of segments.;TCP.
+... is a connection oriented transport protocol.;TCP.
+Which of UDP or TCP is a simpler protocol?;UDP.
+... is an unreliable transport protocol.;UDP.
+... is a faster transport protocol for small transactions.;UDP.
+... is a best effort transport protocol.;UDP.
+What are the packets in a TCP handshake?;SYN, SYN ACK, ACK.
+What are the packets in a TCP session teardown?;FIN, ACK, FIN, ACK.
+What does the TCP handshake achieve?;Sets an initial sequence number for the session. Establishes that the destination device is present on the network. Verifies that the destination device has an active service and is accepting requests on the destination port number that the initiating client intends to use. Informs the destination device that the source client intends to establish a communication session on that port number.
+URG, ACK, PSH, RST, SYN, and FIN are all...;TCP control bits.
+The ACK TCP control bit is used for...;Acknowledgment flag used in connection establishment and session termination.
+The PSH TCP control bit is used for...;Push function, deliver the data to the receiving application immediately without buffering.
+The RST TCP control bit is used for...;Reset the connection. Used when an error or timeout occurs.
+The SYN TCP control bit is used for...;Synchronize sequence numbers during connection establishment.
+The FIN TCP control bit is used for...;No more data from sender, used in session termination to cause the session to be torn down.
+What is the TCP window size?;The number of bytes that may be sent before waiting for an ACK.
+When is the initial TCP window size negotiated?;During the three way handshake.
+What is a TCP sliding window?;"Sliding windows" redefine the window size to mean the number of outstanding bytes, instead of waiting for all N bytes to be ACKed.
+What is the TCP MSS?;Maximum Segment Size (MSS), negotiated during the three way handshake. Typically the MTU minus the 40 bytes of TCP header.
+What is the NIST definition of cloud?;On-demand self service, broad network access, resource pooling, rapid elasticity, measured service.
+What additional threats do clouds introduce?;Who has access, regulatory requirements, your right to audit, training level of cloud operator employees, data classification system of cloud operator, is your data separate from other users, is encryption used, what are the SLAs, what is the long term viability of the provider, who is liable for a breach, what is the DR / business continuity plan.
+What is an alert five tuple?;Source IP and port, Destination IP and port, Protocol.
+Name two tools which can view pcaps in security onion;capme and wireshark.
+Snort is a ...;Network Intrusion Detection System (NIDS).
+Zeek is a ...;Policy based Network Intrusion Detection System (NIDS).
+Bro is now called...;Zeek.
+OSSEC is...;A Host-based Intrusion Detection System (HIDS). Requires endpoints run an agent.
+Wuzah is...;Another Host-based Intrusion Detection System (HIDS) which will replace OSSEC eventually, also requires endpoints run an agent.
+Suricata is...;A Network Intrusion Detection System (NIDS) which uses a signature based approach. It has better multithreading that Zeek and Snort.
+To fetch Snort rule updates, use...;Pulled pork.
+Squil is...;A high-level console for investigating alerts from a wide variety of sources.
+A log analyser with user definable dashboards.;Kibana.
+A full network packet capture and analyser;Wireshark.
+What is in a Snort rule header?;The rule header contains the action, protocol, source and destination IP addresses and netmasks, and the source and destination port information.
+What is in a Snort rule options section?;The rule options section contains alert messages and information on which parts of the packet should be inspected to determine if the rule action should be taken.
+What are the GPL Snort rules?;GPLv2 licensed rules from before Cisco acquired Snort.
+What are the ET Snort rules?;BSD licensed rules from Proofpoint.
+What are the VRT Snort rules?;Cisco Talos rules. Released immediately to subscribers and 30 days later to registered users.
+What are the three sources of rules for Snort?;GPL, ET, VRT.
+How does Squil store IP Addresses?;IP Addresses are stored as uint32, so you need to use INET_ATON() to convert from dotted decimal.
+What is the "ST" field in Squil?;Status of the alert, an indicator of priority.
+What is the "CNT" field in Squil?;Count.
+What are the fields in a Squil alert ID?;The first number is the alert ID, the second number is the event ID.
+What is the correct alert outcome for a real event?;True positive.
+What is the alert outcome for an alert which wasn't real?;False positive.
+What are the possible alert outcomes?;True positive, false positive, true negative, false negative.
+What is deterministic risk analysis?;Based on what is known about a vulnerability. Assumes all steps in the attack are successful, and therefore represents the worst case.
+What is Probabilistic risk analysis?;Based on estimates of the probability that an event will occur.
+What is lsass.exe?;Part of Microsoft Windows, its the local security authority. Often faked by malware, often in incorrect locations in the filesystem.
+XXX security is the protection of confidentiality, integrity, and availability of data.;Information security
+XXX security is the process of protecting information by preventing, detecting, and responding to attacks.;Cyber security
+What are the elements of the CIA triad?;Confidentiality, Integrity, and Availability.
+Define Discretionary Access Control (DAC);The least restrictive model, ACLs are used to grant users and groups access to data. Each resource has a clearly identified owner and that owner decides the access of others. For example a file on a unix filesystem.
+Define Mandatory Access Control (MAC);The strictest model generally used in military and mission critical applications. Access is granted based on a user's security clearance by the Operating System and owner has no control over who can access. Each resource is classified by sensitivity or security label. SELinux is an example of a real world system using MAC.
+Define Role-Based Access Control (RBAC);Users are one or more roles by the systems administrator, and these roles are used to grant access.
+Define Attribute-Based Access Control (ABAC);Attributes of the user, the requested resource, and environmental factors such as time of day are used to determine if access should be granted.
+Define Time-based Access Control (TAC);Access is granted based on time of day and the day.
+What does AAA stand for?;Authentication, Authorization, Accounting.
+Which of TACACS+ or RADIUS is an open standard?;RADIUS
+What protocol and port does TACACS+ use?;TCP port 49
+What protocol and port does RADIUS use?;UDP port 1812 for authentication and authorization and UDP port 813 for accounting.
+Authentication, Authorization, and Accounting are all separate steps in the ... protocol.;TACACS+
+Which of TACACS+ or RADIUS encrypts the entire packet?;TACACS+
+Which of TACACS+ or RADIUS encrypts just the password?;RADIUS
+Which of TACACS+ or RADIUS has a shared secret?;RADIUS
+Which has better accounting facilities of TACACS+ and RADIUS?;RADIUS
+MD5, SHA1, SHA2, and SHA3 are all...;Hashes.
+HMAC can be used for?;Hashed Message Authentication Codes can be used for origin authentication.
+DES, 3DES, AES, SEAL, and RC are all...;Symmetric encryption algorithms.
+Diffie Hellman, DSS / DSA, RSA, ElGamal, and Elliptic Curves are all...;Asymmetric encryption algorithms.
+In PKI the ... the certificate class, the more trustworthy.;Higher.
+A Registration Authority (RA) is ... to a Certifying Authority (CA);Subordinate.
+PKI certificate class 0 is used for;Testing in situations in which no checks have been performed.
+PKI certificate class 1 is used by;Individuals who require verification of email.
+PKI certificate class 2 is used by;Organizations for which proof of identity is required.
+PKI certificate class 3 is used for;Servers and software signing. Independent verification and checking of identity and authority is done by the certificate authority.
+PKI certificate class 4 is used for;Online business transactions between companies.
+PKI certificate class 5 is used for;Private organizations or government security.
+What is FireEye?;A threat intelligence service.
+Name three threat intelligence sources.;Cisco Talos, FireEye, MITRE CVEs.
+Define "IOC".;Indicator of Compromise.
+Define "TTP".;Tools, Techniques, and Procedures.
+What are endpoints?;Devices connected to the network.
+What are the three types of host based antivirus / antimalware?;Signature, heuristic, and behavioural.
+What is Cisco AMP?;A Host-based Intrusion Detection System (HIDS) product.
+What is Network Admission Control (NAC)?;Network access control (NAC) is a security solution that enforces policy on devices that access networks to increase network visibility and reduce risk.
+What is a host based firewall on Windows?;Windows Defender.
+What is a host based firewall on Linux?;iptables.
+Cisco Advanced Malware Protection (AMP) uses ... to execute malware, analyse its behaviour, and then produce signatures.;Cisco Threat Grid Glovebox
+... is a popular free sandbox system.;Cuckoo sandbox
+... is a popular free malware signature lookup site;VirusTotal
+... is an online malware sandbox offering which offers rich reporting including screenshots.;ANY.RUN
+Network profiling is the collection of ...;baseline behaviour such as sesion duration, throughput, ports, and IP Addresses.
+Server profiling is the collection of ...;listening ports, users and accounts, service accounts, and the software environment.
+Who manages the Common Vulnerability Scoring System (CVSS)?;The Forum of Incident Response and Security Teams (FIRST) has been designated as the custodian of the CVSS to promote its adoption globally.
+What is in the CVSS base metric group?;Exploitability (attack vector, complexity, privileges required, user interaction required), and impact (based around the CIA triad).
+What is in the CVSS temporal metric group?;Exploit maturity, remediation level, and report confidence.
+What is in the CVSS environmental metric group?;Modified base metrics based on the particular software.
+What does a CVSS score below 4 mean?;The important of the vulnerability is low.
+What does a CVSS score between 4 and 7 mean?;The importance of the vulnerability is medium.
+What does a CVSS score between 7 than 9 mean?;The importance of the vulnerability is high.
+What does a CVSS score greater than 9 mean?;The vulnerability is critical.
+What is a CVE?;Common Vulnerability and Exposures (CVE), a unique vulnerability identifier managed by MITRE. CVEs are issued by CVE Numbering Authorities (CNAs). Aggregated at cve.mitre.org, and nvd.nist.org. Used as a reference to a specific vulnerability to aid in searching.
+What is the NVD?;National Vulnerability Database (NVD), a database of CVEs and their associated CVSS maintained by the US Federal Government.
+Where can you find a list of CVEs?;In the National Vulnerability Database -- http://nvd.nist.gov
+What is the vulnerability management lifecycle?;Discover (inventory all assets across the network), prioritize assets (categorize assets into groups or business units, and assign a business value to asset groups), assess 9determine a baseline risk profile), report (measure the level of business risk, document a security plan, monitor suspicious activity, and describe known vulnerabilities), remediate (prioritize according to business risk and address vulnerabilities in order of risk), and verify: (through follow-up audits).
+ISO ... defines a Information Security Management System (ISMS);27001
+ISO ... describes a code of practice for information security management;27002
+ISO ... provides detailed implementation advice;27003
+ISO ... describes metrics for monitoring and measuring security in an organization;27004
+ISO ... defines a high level risk management system for cyber risks;27005
+ISO ... defines the requirements for bodies which wish to act as certifiers for ISO compliance;27006
+What are the layers in the Hierarchical Network Design Model?;Access layer (end devices), distribution layer (aggregates access layers), core layer.
+What is an IDS?;An Intrusion Detection System.
+What is an IPS?;An Intrusion Prevention System.
+What are the pros of an IDS?;No Impact on network (latency, jitter), no Network impact if there is a sensor failure or overload.
+What are the cons of an IDS?;Response action cannot stop trigger packets, correct tuning required for response actions, more vulnerable to network security evasion techniques (for example traffic fragmentation).
+What are the pros of an IPS?;Stops trigger packets, can use stream normalization techniques.
+What are the cons of an IPS?;Sensor issues might affect network traffic, sensor overloading impacts the network, some impact on network (latency, jitter).
+What elements exist in an ACL?;Protocol, source and destination address, source and destination ports, other protocol information.
+What are the types of firewall?;Packet filtering (stateless), stateful, application gateway, next generation (integrated IPS, application aware, fed threat information from the cloud).
+What is a Cisco WSA?;Web Security Appliances (WSAs) are HTTP proxies which perform URL reputation and malware detection on traffic as it passes through. Can also block specific site functionality such as DropBox and Google Drive, or allow Facebook while blocking Facebook games.
+What is a Cisco ESA?;Email Security Appliances (ESAs).
+What does SNMP collect?;Management information such as counters from network devices.
+What does NetFlow collect?;Packet flow summaries, not including the content of packets.
+What is syslog?;A networked logging system.
+What is NTP?;Network Time Protocol, a method of synchronizing clocks over the network.
+What is AAA?;Authentication, Authorization, and Accounting.
+What are two AAA protocols?;TACACS+ and RADIUS.
+What are the risk management options?;Accept, avoid, reduce, transfer.
+What is an example of risk avoidance?;Eliminate the activity or device which presents the risk.
+What is an example of risk reduction?;Mitigate the risk.
+What is an example of risk transfer?;The purchase of insurance.
+What are indicators of compromise?;Pieces of forensic data, such as data found in system log entries or files, that identify potentially malicious activity on a system or network.
+Research about existing and emerging threats to assets is called...;...threat intelligence.
+What is an IoC?;An Indicator Of Compromise.
+What is an IaC?;An Indicator of Attack.
+What are the sources of routes for a router?;Locally attached devices, static routes, dynamic routing protocols.
+What are two vector routing protocols?;RIPv2, IGRP / EIGRP.
+What are four routing protocols?;RIPv2, IGRP / EIGRPl, OSPF, and BGP.
+What is STP?;Spanning Tree Protocol, a Layer 2 protocol enabling redundant networks covered by IEEE 802.1D. Without STP we'd have broadcast storms and MAC address flapping because of loops in the network. Works by putting redundant interfaces into a "blocking" state, essentially disabling the interface except for STP messages (called BPDUs, Bridge Protocol Data Units).
+What IEEE specification covers wireless networks?;802.11.
+How does wireless differ from wired networks?;Wireless is more active in collision avoidance (avoid, not detect), clients are often battery powered so power management is harder, a different frame format, and less private.
+What is a BSS?;Basic Service Set (BSS), a BSSID broadcast in a Basic Service Area (BSA), is the layer 2 MAC address of the router.
+What is a ESS?;Extended Service Set (ESS), in Extended Service Areas (ESAs) multiple BSAs stitched to a single wire distribution system. This enables roaming.
+What is CSMA/CA in wireless networking?;CSMA/CA (Carrier Sense Multiple Access / Collision Avoidance). Wireless is a half duplex shared media. Process is listen (wait for it to be idle), RTS (send "ready to send" message), CTS (AP will respond with a "clear to send" message), transmit (client then transmits its data), ACK (AP will ACK data).
+What are the AP discovery modes?;Passive (client passively listens for SSID beacons, which include supported standards and security settings), active (manually configure client with SSID and supported standards, the client then probes for APs which match and receives probe responses from them).
+What are the four packets in a wireless authentication?;Authentication request and response, association request and response.
+What transport protocol does DHCP use?;UDP
+What port is DHCP served on?;UDP port 67 for the server and port 68 for the client.
+What are the DHCP packets to request an IP?;DORA: Discover, Offer, Request, Ack.
+What is NAT?;Network Address Translation -- the process of mapping an internal private IP to an external IP. For Cisco devices NAT is often a 1:1 mapping.
+What is PAT?;Port Address Translation -- the process of mapping many internal private IPs to a single external IP using source port numbers on the public interface to identify each flow.
+What transport protocol does FTP use?;TCP.
+What transport protocol does TFTP use?;UDP.
+What are the steps in a HTTPS handshake?;The client sends a request to the server for a secure session. The server responds by sending its X.509 digital certificate to the client. The client authenticates the server, using a list of known certificate authorities. The client generates a random symmetric key and encrypts it using server's public key. The client and server now both know the symmetric key and can use the SSL encryption process to encrypt and decrypt the information contained in the client request and the server response.
+How is HTTP/2 different from HTTP?;It is a binary protocol which allows multiplexing, header compression, and server push.
+What are three protocols used for email?;SMTP (delivery of email), POP3 and IMAP (collection of email).
+What is the difference between a virus and a worm?;A virus attaches itself to another piece of software and requires user interaction to spread, a worm uses a vulnerability to self-propagate.
+A piece of malware which is disguised as an otherwise useful piece of software is a...;Trojan horse.
+... encrypts data and demands payment for decription.;Ransomware.
+... records keystrokes and other private data for profit.;Spyware.
+... displays unwanted advertising.;Adware.
+Malware intended to cause fear in the user is ...;Scareware.
+Malware intended to hide on a system is like a ...;Rootkit.
+The fraudulent practice of sending emails or other messages purporting to be from reputable companies in order to induce individuals to reveal personal information is ...;Phishing
+... makes detection of malicious traffic harder.;Encryption, tunneling, or traffic fragmentation.
+Which NIST publication outlines forensic techniques for incident response?;NIST Special Publication 800-86
+What are the NIST Special Publication 800-86 phases?;Collection, examination, analysis, reporting, then repeat.
+What is included in the NIST SP 800-86 collection phase?;Identification of sources of information, acquiring and handling the data, and storage.
+What is included in the NIST SP 800-86 examination phase?;Assessing and extracting relevant information from the data. This might involve decompression, and filtering.
+What is included in the NIST SP 800-86 analysis phase?;Drawing conclusions from the data. Features such as people, places, times, and events might be correlated and documented.
+What is included in the NIST SP 800-86 reporting phase?;Preparing and presenting information that was derived from the analysis. Reporting should be impartial and alternative explanations should be offered if appropriate. Limitations of analysis and problems encountered should be included. Next steps should be discussed.
+What are the types of evidence?;Best, corroborating, indirect.
+"What is ""best evidence""?";evidence in its original state, and provably unaltered. From devices used by the accused (direct evidence), or archives of files that can be proven to be unaltered.
+"What is ""Corroborating evidence""?";Evidence which supports assertions made with the best evidence.
+"What is ""Indirect evidence""?";Evidence that helps establish a hypothesis when combined with the use of other evidence. Also known as circumstantial evidence.
+According to IETF RFC 3227, what is the most volatile form of evidence?;Memory registers, caches.
+According to IETF RFC 3227, what is the second most volatile form of evidence?;Routing table, ARP cache, process table, kernel statistics, RAM.
+Apart from evidence in memory, what are the most volatile to least volatile forms of evidence according to IETF RFC 3227?;Temporary file systems, non-volatile media / fixed and removable storage, remote logging and monitoring data, physical interconnections and topologies, archival media / tape or other backups.
+What should a chain of custody record?;Who discovered and collected the evidence, all details of the handling of the evidence including times, places, and personnel involved, who is primarily responsible for the evidence, when responsibility was assigned, and any changes of custody, and who has physical access while the evidence is stored. Access should be restricted to the most essential personnel.
+When investigating evidence, why do you always work on a copy of the data?;It is important that evidence is preserved, including timestamps. You therefore normally only investigate on a copy of data. Document the process used to make copies of the data. Bit level copies with the same hash are preferred to more indirect copying techniques.
+Speculation should be avoided during...;Attack attribution.
+What are TTPs?;Tactics, Techniques, and Procedures.
+What are examples of TTPs that might help with attack attribution?;Origin of attacking hosts, domains used, code features and tools.
+What does MITRE ATT&CK stand for?;Adversarial Tactics, Techniques, and Common Knowledge.
+What is MITRE ATT&CK?;A global knowledgebase of threat actor behaviours.
+What are the phases of the Lockheed Martin Cyber Kill Chain?;Reconnaissance, Weaponization, Delivery, Exploitation, Installation, Command and Control, Actions on Objectives.
+What occurs during the reconnaissance phase of the Cyber Kill Chain?;Research publicly available information, including details of employees. The attacker selects targets which are neglected or unprotected, as they are more likely to be able to be compromised.
+What occurs during the weaponization phase of the Cyber Kill Chain?;Use the information from reconnaissance to develop a weapon against specific targeted systems or individuals in the organization.
+What occurs during the installation phase of the Cyber Kill Chain?;This step is where the threat actor establishes a back door into the system to allow for continued access to the target. To preserve this backdoor, it is important that remote access does not alert cybersecurity analysts or users. The access method must survive through antimalware scans and rebooting of the computer to be effective. This persistent access can also allow for automated communications, especially effective when multiple channels of communication are necessary when commanding a botnet.
+What are the four components of the Diamond Model of Intrusion?;Adversary (top), Infrastructure (left), Capability (right), Victim (bottom).
+In the Diamond Model, an adversary ... infrastructure.;uses.
+In the Diamond Model, an adversary ... capability.;develops.
+In the Diamond Model, an infrastructure ... victim.;connects to.
+In the Diamond Model, an capability ... victim.;exploits.
+What are the Diamond Model meta-features?;Timestamp, phase, result, direction, methodology, resources.
+Which NIST publication outlines incident response?;NIST Special Publication 800-61r2.
+What organization does NIST SP 800-61r2 recommend be created?;That a Computer Security Incident Response Centre (CSIRC) be created.
+What should a NIST SP 800-61r2 CSIRC maintain?;Policies, plans, and procedures.
+What should be included in the CSIRC policies according to NIST SP 800-61r2?;Statement of management commitment, purpose and objectives of the policy. Scope of the policy. Definition of computer security incidents and related terms. Organizational structure and definition of roles, responsibilities, and levels of authority. Prioritization of severity ratings of incidents. Performance measures. Reporting and contact forms.
+What should be included in the CSIRC plan according to NIST SP 800-61r2?;Mission. Strategies and goals. Senior management approval. Organizational approach to incident response. How the incident response team will communicate with the rest of the organization and with other organizations. Metrics for measuring the incident response capacity. How the program fits into overall organization.
+What should be included in the CSIRC procedures according to NIST SP 800-61r2?;These are typical standard operating procedures (SOPs). These SOPs should be detailed so that the mission and goals of the organization are in mind when these procedures are followed. SOPs minimize errors that may be caused by personnel that are under stress while participating in incident handling.
+What is the incident response lifecycle according to NIST SP 800-61r2?;Preparation. Detection and Analysis. Containment, Eradication, and Recovery. Post-Incident Activities.
+What are incident management stakeholders?;Management. Information assurance. IT Support Legal. Public affairs / media relations. HR. Business continuity planners. Physical security and facilities management.
+What is CMMC?;The Cybersecurity Maturity Model Certification (CMMC) framework was created to assess the ability of organizations that perform functions for the U.S. Department of Defense (DoD) to protect the military supply chain from disruptions or losses due to cybersecurity incidents.
+What are the steps of the NIST Cyber Security Framework?;Identify, protect, detect, respond, recover.
+What are the steps of the NIST Incident Response Lifecycle?;Preparation, detection and analysis, containment / eradication / recovery, post incident review.
+Who are CISA?;The US Cybersecurity Infrastructure and Security Agency.
+What is AIS?;Automated Indicator Sharing.
+What is a vulnerability of ARP?;Cache poisoning.
+What are some vulnerabilities of DNS?;Open resolvers, DNS stealthing.
+What are some vulnerabilities of DHCP?;Rogue DHCP servers handing out wrong gateway, DNS or IP.
+What are some vulnerabilities of HTTP / HTTPS?;Malicious iFrames, 302 redirect cushioning, domain shadowing, XSS.
+What are some SMTP vulnerabilities?;Malicious attachments, spoofing, spam, open relays, homoglyphs.
+What are some vulnerabilities of web attached databases?;Code and SQL injection.
+What are some IP vulnerabilities?;ICMP attacks, DoS / DDoS, address spoofing, man in the middle (MiTM), session hijacking.
+What are some TCP vulnerabilities?;SYN floods, TCP resets, session hijacking.
+What is a UDP vulnerability?;Floods.
+What ICMP messages are used by the ping command?;ICMP echo request and echo reply.
+What are the common IPv4 ICMP messages?;echo request / reply, destination unreachable, time exceeded, and route redirection.
+ICMP message code 0 is ...;Echo reply.
+ICMP message code 3 is ...;Destination unreachable.
+ICMP message code 5 is ...;Redirect (use another route).
+ICMP message code 8 is ...;Echo request.
+ICMP message code 11 is ...;Time / TTL exceeded.
+An ICMP echo reply destination unreachable code 0 is ...;Network unreachable.
+An ICMP echo reply destination unreachable code 1 is ...;Host unreachable.
+An ICMP echo reply destination unreachable code 2 is ...;Protocol unreachable.
+An ICMP echo reply destination unreachable code 3 is ...;Port unreachable.
+You receive an ICMP time exceeded in IPv4 when ...;The TTL field in the IP header reaches 0, having been decremented by each router along the packet's path.
+You receive an ICMP time exceeded in IPv6 when ...;When the hop limit from the IP header has been exceeded.
+ICMPv6 Router Advertisement (RA) messages are used ...;Between a router and an end host. Uses Stateless Address Autoconfiguration (SLAAC). The RA message includes addressing information for the host such as prefix, prefix length, DNS address, and domain name. Sent periodically, or in response to a Router Solicitation (RS) message.
+ICMPv6 Router Solicitation (RS) messages are used ...;Between a router and an end host. Send to prompt a Router Advertisement (RA) message.
+ICMPv6 Neighbor Advertisement (NA) messages are used ...;Between end hosts. Equivalent of ARP request in IPv4 -- the IPv6 address is known, but not the MAC address.
+ICMPv6 Neighbor Solicitation (NS) messages are used ...;Between end hosts. Equivalent to an ARP reply in IPv4. Includes the ethernet devices' MAC address.
+ICMPv6 Duplicate Address Detection (DAD) is used ...;When assigned a global unicast or link-local unicast address, an Neighbor Solicitation (NS) message is sent with its own IPv6 address. If another device on the network has this address, it will respond with a Neighbor Advertisement (NA) message. DAD is not required, but recommended by RFC 4861.
+What is a Hub?;A Layer 1 (physical) device. A simple repeater. All received packets are flooded out all interfaces except the one the packet was received on. Traffic is half duplex as all interfaces on the hub form a single collision domain.
+What is a Switch?;A Layer 2 (data link) device. Maintains a MAC address table of addresses per port, and only floods traffic when it doesn't have a MAC address table entry for the recipient. If it does have one, only the recorded interface is used. Can be a full duplex device, as each interface is its own collision domain.
+What is a Bridge?;A Layer 2 (data link) device. Interconnect two layer 2 networks. The concept is largely obsolete now, but they perform buffering and speed translation between these networks. Bridging is not routing, the two joined networks effectively become one.
+What is a Router?;A Layer 3 (network) device. Maintain a route table and move traffic between otherwise separate networks.
+What are the layers in the OSI model?;Bottom to top: Please Do Not Teach Students Pointless Acronyms (PDNTSPA). Physical, Data link, Network, Transport, Session, Presentation, Application.
+What are the layers of the TCP/IP model?;Application, Transport, Network, Data Link.
+What OSI Layers map to the TCP/IP Application Layer?;Application, Presentation, Session (the top three).
+What OSI Layers map to the TCP/IP Data Link Layer?;Data Link, Physical (the bottom two).
+What IEEE specification covers the Data Link Layer in the OSI model for Ethernet?;802.2
+What IEEE specification covers the Physical Layer in the OSI model for Ethernet?;802.3
+How does Ethernet handle collisions?;Using Carrier Sense Multiple Access / Collision Detection (CSMA/CD). Devices check for a carrier before sending, if a collision is detected during sending devices wait a random amount of time before retrying.
+What are three characteristics of IPv4?;It is connection-less, best effort, and media independent.
+How bit are IPv4 addresses?;32 bits.
+What protocol number is ICMP in IPv4?;1
+What protocol number is TCP in IPv4?;6
+What protocol number is UDP in IPv4?;17
+What protocol number is OSPF in IPv4?;89
+What is the netmask in a class A IPv4 netblock?;The first 8 bits of the address.
+What is the netmask in a class B IPv4 netblock?;The first 16 bits of the address.
+What is the netmask in a class C IPv4 netblock?;The first 24 bits of the address.
+What is the first octet in a Class A IPv4 address?;0xxxxxxx (0-127) 0 and 127 networks are reserved.
+What is the first octet in a Class B IPv4 address?;10xxxxxx (128-191).
+What is the first octet in a Class C IPv4 address?;110xxxxx (192-223).
+What is the first octet in a Class D IPv4 address?;1110xxxx (224-239).
+What is the first octet in a Class E IPv4 address?;1111xxxx (240-255).
+What are class D addresses used for in IPv4?;Multicast.
+What are class E addresses used for in IPv4?;Reserved for future use.
+What IP Addresses are reserved in a IPv4 netblock?;First address (all 0s) in a netblock is the network address, the last address (all 1s) in a netblock is the broadcast address.
+What are the RFC1918 IPv4 netblocks?;Private non-routable addresses. 10.0.0.0/8, 172.16.0.0/12, and 192.168.0.0/16.
+How many addresses are there in a /24 IPv4 CIDR netblock?;256
+How many addresses are there in a /25 IPv4 CIDR netblock?;128
+How many addresses are there in a /26 IPv4 CIDR netblock?;64
+How many addresses are there in a /27 IPv4 CIDR netblock?;32
+How many addresses are there in a /28 IPv4 CIDR netblock?;16
+How many addresses are there in a /29 IPv4 CIDR netblock?;8
+How many addresses are there in a /30 IPv4 CIDR netblock?;4
+How many addresses are there in a /31 IPv4 CIDR netblock?;2
+How many addresses are there in a /32 IPv4 CIDR netblock?;1
+How many usable addresses are there in a /24 IPv4 CIDR netblock?;254
+How many usable addresses are there in a /25 IPv4 CIDR netblock?;126
+How many usable addresses are there in a /26 IPv4 CIDR netblock?;62
+How many usable addresses are there in a /27 IPv4 CIDR netblock?;30
+How many usable addresses are there in a /28 IPv4 CIDR netblock?;14
+How many usable addresses are there in a /29 IPv4 CIDR netblock?;6
+How many usable addresses are there in a /30 IPv4 CIDR netblock?;2
+How many usable addresses are there in a /31 IPv4 CIDR netblock?;0
+How many usable addresses are there in a /32 IPv4 CIDR netblock?;1
+How many bits are in an IPv6 Address?;128.
+How many hextets are in an IPv6 Address?;16.
+How do we shorten written IPv6 Addresses?;Omit leading zeros within a hextet, use a double colon to remove runs of zero hextets.
+What protocol and port is telnet?;TCP port 23.
+What protocol and port is SMTP?;TCP port 25.
+What protocol and port is DNS?;Both TCP and UDP ports 53. Normally UDP unless the response is too large to fit in a UDP datagram (like zone transfers).
+What protocol and port is HTTP?;TCP port 80.
+What protocol and port is HTTPS?;TCP port 443.
+Where does syslog on Linux log to by default?;Either /var/log/syslog or /var/log/messages.
+Where are authentication logs on Linux?;Either /var/log/auth.log or /var/log/secure.
+What command can show you kernel log messages on Linux?;dmesg.
+What is a PDU?;Protocol Data Unit.
+What is the PDU at the Application Layer of the OSI model?;Data
+What is the PDU at the Transport Layer of the OSI model?;TCP: Segment, UDP: Datagram
+What is the PDU at the Network Layer of the OSI model?;Packet
+What is the PDU at the Data Link Layer of the OSI model?;Frame
+What is the PDU at the Physical Layer of the OSI model?;Bit
+What is the address component at the Transport Layer of the OSI model?;The protocol and port.
+What is the address component at the Network Layer of the OSI model?;IP Address.
+What is the address component at the Data Layer of the OSI model?;MAC Address.
+What is a threat?;A potential danger to an asset.
+What is a vulnerability?;A weakness in the design or implementation of a system.
+What is an attack?;Deliberate exploitation of a discovered weakness.
+What is the attack surface?;The total sum of the vulnerabilities in a given system that are accessible to an attacker.
+What is an exploit?;A piece of software, tool, or technique which takes advantage of a vulnerability.
+What is a risk?;The probability that a given threat will be manifested.
+What is a threat actor?;Individuals or groups who perform an attack.
+What are types of threat actors?;Script kiddies, organized crime groups, state sponsored groups, hacktivists, terrorists.
+Individuals who perform ethical hacking to help secure companies and organizations are called...;White Hat hackers.
+Individuals who perform illegal activities, such as organized cyber crime.;Black Hat hackers.
+Individuals who <i>usually</i> follow the law, but sometimes do not.;Gray Hat hackers.
+What is Structured Thread Information eXpression (STIX);A language for sharing threat information, originally developed by MITRE now maintained by OASIS.
+What is Trusted Automated eXchange of Indicator Information (TAXII)?;An open transport for automated exchange of information, originally developed by MITRE and now maintained by OASIS.
+What is Cyber Observable eXpression (CybOX)?;A standardized schema for specification, capture, and characterization of events, originally developed by MITRE and now maintained by OASIS.
+What are Open Indicators of Compromise (OpenIOC)?;Machine readable IOC data.
+What is Open Command and Control (OpenC2)?;An open command and control system for distributed cyber defence technologies.
+What is PII?;Personally Identifying Information
+What is PHI?;Protected Health Information
+What is PSI?;Personal Security Information (usernames, passwords, etc)
+What US legislation covers PHI?;HIPPA
+What EU legislation covers PHI?;GDPR
+What is a zero day exploit?;A exploit for a vulnerability which has not been previously reported.
+What is residual risk?;The remaining risk once safeguards and controls have been implemented.
+What is a virus?;A self-replicating program which infects hosts to perform undesirable actions. It requires human interaction to replicate.
+What is a worm?;A self-replicating program which does not require human interaction to replicate.
+What is a logic bomb?;Malicious code injected into a legitimate application.
+What is a trojan horse?;A malicious application which uses social engineering to convince the user to install it.
+Attacks which gather information are...;Reconnaissance attacks.
+Attacks which take advantage of a vulnerability to gain access are...;Access attacks.
+Zombies;Infected machines.
+Bot;The malware which infects a machine.
+Botnet;A group of zombies.
+Handlers;Command and control (CnC / C2) servers.
+Botmaster;The threat actor in command of a botnet.
+What is the role of a Tier 1 SOC worker?;Monitor incoming alerts, verify that an incident has really occurred.
+What is the role of a Tier 2 SOC worker?;Incident response. Investigate incidents and advise remediation actions.
+What is the role of a Tier 3 SOC worker?;Threat Hunter. Expert-level skill in network, endpoint, threat intel, and malware reverse engineering. Implementing detection tooling.
+What is the role of a SOC manager?;Manage SOC resources.
+What does SIEM stand for?;Security Information and Event Management
+What does SOAR stand for?;Security Orchestration, Automation, and Response.
+"What does the SOC metric ""dwell time"" measure?";Time before first detection of an incident.
+"What does the SOC metric ""MTTD"" measure?";Mean Time To Detect an incident.
+"What does the SOC metric ""MTTR"" mean?";Man Time To Respond to an incident.
+"What does the SOC metric ""MTTC"" mean?";Mean Time To Contain an incident.
+"What does the SOC metric ""ToC"" mean?";Time To Control.
+What does the SOC metric dwell time mean?;How long threat actors have access to the network before being detected and access revoked.
+What are the four SOC metrics?;Dwell Time, Mean Time to Detect, Mean Time to Respond, Mean Time to Contain.
+What is Time to Control?;The time it takes to stop the spread of malware in the network.
+What issues CISSP certifications?;(ISC)2
+Who issues CySA+ certifications?;CompTIA.
+What two Windows accounts are created on installation but disabled by default?;Administrator and guest.
+What permissions does the first manually created account on Windows have?;Administrator.
+What NTFS attribute stores the file data?;$DATA
+How do you access Alternate Data Streams (ADSs) in NTFS?;Use a colon after the filename to name the stream, for example foo.txt:extra.
+How can you list the Alternate Data Streams for an NTFS file?;dir /r
+What command shows Windows startup settings?;msconfig.exe
+For a cold boot with no restore from hibernation, what are the Windows boot steps?;BIOS or UEFI, read Boot Configuration Database (BCD), winload.exe, Kernel Mode Code Signing (KMCS) verifies kernel drivers, ntoskrnl.exe, Session Manager SubSystem (SMSS) reads the registry to create the user environment and starts winlogin service to prepare the desktop.
+What command can edit the registry on Windows?;regedit.exe
+What is stored in HKEY_LOCAL_MACHINE in the Windows registry?;System related information.
+What is stored in HKEY_CURRENT_USER in the Windows registry?;Information about the currently logged in user.
+What is stored in HKEY_USERS in the Windows registry?;Information about all user accounts on the host.
+What is stored in HKEY_CLASSES_ROOT in the Windows registry?;Information about Object Linking and Embedding (OLE) registrations.
+What is stored in HKEY_CURRENT_CONFIG in the Windows registry?;Information about the current hardware profile.
+What are the registry entry data types on Windows?;REG_BINARY, REG_DWORD (a number), REG_SZ (a string).
+What command manages local users and groups?;lusrmgr.msc
+What command can manage accounts, sessions and shares on Windows?;net
+What command on Windows can show current memory allocations?;rammap.exe from the sysinternals suite.
+What command on Windows shows network interface configuration details?;ipconfig
+What command on Windows can lookup DNS records?;nslookup
+What command on Windows shows routing information?;netstat
+What is a Windows service?;A long running daemon that can run without a user being logged in.
+How can you manage Windows services?;Either the services WMI snap in, sc.exe, or powershell.
+What are the Windows log types?;Event, System, and Security.
+"What is the Windows Event Log ""Error"" level used for?";Logging significant problems.
+"What is the Windows Event Log ""Warning"" level used for?";Warnings of possible future failure.
+"What is the Windows Event Log ""Info"" level used for?";Successful operations.
+"What is the Windows Event Log ""Success"" audit level used for?";Security audited events that were successful.
+"What is the Windows Event Log ""Failure"" audit level used for?";Security audited events that were unsuccessful.
