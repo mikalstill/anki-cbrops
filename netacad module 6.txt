@@ -7,10 +7,10 @@
 # fiddly to know and I suspect might not be likely on the exam. I might be
 # wrong there though...
 #
-What is a Hub?;Layer 1. A simple repeater. All received packets are flooded out all interfaces except the one the packet was received on. Traffic is half duplex as all interfaces on the hub form a single collision domain.
-What is a Switch?;Layer 2. Maintains a MAC address table of addresses per port, and only floods traffic when it doesn't have a MAC address table entry for the recipient. If it does have one, only the recorded interface is used. Can be a full duplex device, as each interface is its own collision domain.
-What is a Bridge?;Layer 2. Interconnect two layer 2 networks. The concept is largely obsolete now, but they perform buffering and speed translation between these networks. Bridging is not routing, the two joined networks effectively become one.
-What is a Router?;Layer 3. Maintain a route table and move traffic between otherwise separate networks.
+What is a Hub?;A Layer 1 (physical) device. A simple repeater. All received packets are flooded out all interfaces except the one the packet was received on. Traffic is half duplex as all interfaces on the hub form a single collision domain.
+What is a Switch?;A Layer 2 (data link) device. Maintains a MAC address table of addresses per port, and only floods traffic when it doesn't have a MAC address table entry for the recipient. If it does have one, only the recorded interface is used. Can be a full duplex device, as each interface is its own collision domain.
+What is a Bridge?;A Layer 2 (data link) device. Interconnect two layer 2 networks. The concept is largely obsolete now, but they perform buffering and speed translation between these networks. Bridging is not routing, the two joined networks effectively become one.
+What is a Router?;A Layer 3 (network) device. Maintain a route table and move traffic between otherwise separate networks.
 #
 What are the layers in the OSI model?;Bottom to top: Please Do Not Teach Students Pointless Acronyms (PDNTSPA). Physical, Data link, Network, Transport, Session, Presentation, Application.
 What are the layers of the TCP/IP model?;Application, Transport, Network, Data Link.

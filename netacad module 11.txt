@@ -2,3 +2,15 @@
 #html:false
 ################################################################################
 # NETACAD MODULE 11
+What are the sources of routes for a router?;Locally attached devices, static routes, dynamic routing protocols.
+What are two vector routing protocols?;RIPv2, IGRP / EIGRP.
+What are four routing protocols?;RIPv2, IGRP / EIGRPl, OSPF, and BGP.
+What is STP?;Spanning Tree Protocol, a Layer 2 protocol enabling redundant networks covered by IEEE 802.1D. Without STP we'd have broadcast storms and MAC address flapping because of loops in the network. Works by putting redundant interfaces into a "blocking" state, essentially disabling the interface except for STP messages (called BPDUs, Bridge Protocol Data Units).
+#
+What IEEE specification covers wireless networks?;802.11.
+How does wireless differ from wired networks?;Wireless is more active in collision avoidance (avoid, not detect), clients are often battery powered so power management is harder, a different frame format, and less private.
+What is a BSS?;Basic Service Set (BSS), a BSSID broadcast in a Basic Service Area (BSA), is the layer 2 MAC address of the router.
+What is a ESS?;Extended Service Set (ESS), in Extended Service Areas (ESAs) multiple BSAs stitched to a single wire distribution system. This enables roaming.
+What is CSMA/CA in wireless networking?;CSMA/CA (Carrier Sense Multiple Access / Collision Avoidance). Wireless is a half duplex shared media. Process is listen (wait for it to be idle), RTS (send "ready to send" message), CTS (AP will respond with a "clear to send" message), transmit (client then transmits its data), ACK (AP will ACK data).
+What are the AP discovery modes?;Passive (client passively listens for SSID beacons, which include supported standards and security settings), active (manually configure client with SSID and supported standards, the client then probes for APs which match and receives probe responses from them).
+What are the four packets in a wireless authentication?;Authentication request and response, association request and response.

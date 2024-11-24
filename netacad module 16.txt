@@ -2,3 +2,6 @@
 #html:false
 ################################################################################
 # NETACAD MODULE 16
+What are some IP vulnerabilities?;ICMP attacks, DoS / DDoS, address spoofing, man in the middle (MiTM), session hijacking.
+What are some TCP vulnerabilities?;SYN floods, TCP resets, session hijacking.
+What is a UDP vulnerability?;Floods.

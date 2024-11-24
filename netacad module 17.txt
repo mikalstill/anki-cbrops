@@ -2,3 +2,9 @@
 #html:false
 ################################################################################
 # NETACAD MODULE 17
+What is a vulnerability of ARP?;Cache poisoning.
+What are some vulnerabilities of DNS?;Open resolvers, DNS stealthing.
+What are some vulnerabilities of DHCP?;Rogue DHCP servers handing out wrong gateway, DNS or IP.
+What are some vulnerabilities of HTTP / HTTPS?;Malicious iFrames, 302 redirect cushioning, domain shadowing, XSS.
+What are some SMTP vulnerabilities?;Malicious attachments, spoofing, spam, open relays, homoglyphs.
+What are some vulnerabilities of web attached databases?;Code and SQL injection.

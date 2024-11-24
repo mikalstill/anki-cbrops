@@ -2,3 +2,24 @@
 #html:false
 ################################################################################
 # NETACAD MODULE 12
+What are the layers in the Hierarchical Network Design Model?;Access layer (end devices), distribution layer (aggregates access layers), core layer.
+#
+What is an IDS?;An Intrusion Detection System.
+What is an IPS?;An Intrusion Prevention System.
+What are the pros of an IDS?;No Impact on network (latency, jitter), no Network impact if there is a sensor failure or overload.
+What are the cons of an IDS?;Response action cannot stop trigger packets, correct tuning required for response actions, more vulnerable to network security evasion techniques (for example traffic fragmentation).
+What are the pros of an IPS?;Stops trigger packets, can use stream normalization techniques.
+What are the cons of an IPS?;Sensor issues might affect network traffic, sensor overloading impacts the network, some impact on network (latency, jitter).
+#
+What elements exist in an ACL?;Protocol, source and destination address, source and destination ports, other protocol information.
+What are the types of firewall?;Packet filtering (stateless), stateful, application gateway, next generation (integrated IPS, application aware, fed threat information from the cloud).
+What is a Cisco WSA?;Web Security Appliances (WSAs) are HTTP proxies which perform URL reputation and malware detection on traffic as it passes through. Can also block specific site functionality such as DropBox and Google Drive, or allow Facebook while blocking Facebook games.
+What is a Cisco ESA?;Email Security Appliances (ESAs).
+#
+What does SNMP collect?;Management information such as counters from network devices.
+What does NetFlow collect?;Packet flow summaries, not including the content of packets.
+What is syslog?;A networked logging system.
+What is NTP?;Network Time Protocol, a method of synchronizing clocks over the network.
+#
+What is AAA?;Authentication, Authorization, and Accounting.
+What are two AAA protocols?;TACACS+ and RADIUS.

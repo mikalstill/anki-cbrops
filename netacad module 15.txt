@@ -2,3 +2,5 @@
 #html:false
 ################################################################################
 # NETACAD MODULE 15
+Who are CISA?;The US Cybersecurity Infrastructure and Security Agency.
+What is AIS?;Automated Indicator Sharing.

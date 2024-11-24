@@ -2,3 +2,16 @@
 #html:false
 ################################################################################
 # NETACAD MODULE 21
+MD5, SHA1, SHA2, and SHA3 are all...;Hashes.
+HMAC can be used for?;Hashed Message Authentication Codes can be used for origin authentication.
+DES, 3DES, AES, SEAL, and RC are all...;Symmetric encryption algorithms.
+Diffie Hellman, DSS / DSA, RSA, ElGamal, and Elliptic Curves are all...;Asymmetric encryption algorithms.
+#
+In PKI the ... the certificate class, the more trustworthy.;Higher.
+A Registration Authority (RA) is ... to a Certifying Authority (CA);Subordinate.
+PKI certificate class 0 is used for;Testing in situations in which no checks have been performed.
+PKI certificate class 1 is used by;Individuals who require verification of email.
+PKI certificate class 2 is used by;Organizations for which proof of identity is required.
+PKI certificate class 3 is used for;Servers and software signing. Independent verification and checking of identity and authority is done by the certificate authority.
+PKI certificate class 4 is used for;Online business transactions between companies.
+PKI certificate class 5 is used for;Private organizations or government security.
