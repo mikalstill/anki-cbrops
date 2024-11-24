@@ -2,3 +2,31 @@
 #html:false
 ################################################################################
 # NETACAD MODULE 26
+Name two tools which can view pcaps in security onion;capme and wireshark.
+Snort is a ...;Network Intrusion Detection System (NIDS).
+Zeek is a ...;Policy based Network Intrusion Detection System (NIDS).
+Bro is now called...;Zeek.
+OSSEC is...;A Host-based Intrusion Detection System (HIDS). Requires endpoints run an agent.
+Wuzah is...;Another Host-based Intrusion Detection System (HIDS) which will replace OSSEC eventually, also requires endpoints run an agent.
+Suricata is...;A Network Intrusion Detection System (NIDS) which uses a signature based approach. It has better multithreading that Zeek and Snort.
+To fetch Snort rule updates, use...;Pulled pork.
+Squil is...;A high-level console for investigating alerts from a wide variety of sources.
+A log analyser with user definable dashboards.;Kibana.
+A full network packet capture and analyser;Wireshark.
+What is in a Snort rule header?;The rule header contains the action, protocol, source and destination IP addresses and netmasks, and the source and destination port information.
+What is in a Snort rule options section?;The rule options section contains alert messages and information on which parts of the packet should be inspected to determine if the rule action should be taken.
+What are the GPL Snort rules?;GPLv2 licensed rules from before Cisco acquired Snort.
+What are the ET Snort rules?;BSD licensed rules from Proofpoint.
+What are the VRT Snort rules?;Cisco Talos rules. Released immediately to subscribers and 30 days later to registered users.
+What are the three sources of rules for Snort?;GPL, ET, VRT.
+How does Squil store IP Addresses?;IP Addresses are stored as uint32, so you need to use INET_ATON() to convert from dotted decimal.
+What is the "ST" field in Squil?;Status of the alert, an indicator of priority.
+What is the "CNT" field in Squil?;Count.
+What are the fields in a Squil alert ID?;The first number is the alert ID, the second number is the event ID.
+#
+What is the correct alert outcome for a real event?;True positive.
+What is the alert outcome for an alert which wasn't real?;False positive.
+What are the possible alert outcomes?;True positive, false positive, true negative, false negative.
+#
+What is deterministic risk analysis?;Based on what is known about a vulnerability. Assumes all steps in the attack are successful, and therefore represents the worst case.
+What is Probabilistic risk analysis?;Based on estimates of the probability that an event will occur.

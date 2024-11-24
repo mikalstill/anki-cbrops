@@ -1,4 +1,6 @@
 #separator:semicolon
 #html:false
 ################################################################################
-#
+# Extra cloud things included in the certification guide but not netacad.
+What is the NIST definition of cloud?;On-demand self service, broad network access, resource pooling, rapid elasticity, measured service.
+What additional threats do clouds introduce?;Who has access, regulatory requirements, your right to audit, training level of cloud operator employees, data classification system of cloud operator, is your data separate from other users, is encryption used, what are the SLAs, what is the long term viability of the provider, who is liable for a breach, what is the DR / business continuity plan.
