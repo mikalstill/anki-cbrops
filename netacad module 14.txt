@@ -2,3 +2,13 @@
 #html:true
 ################################################################################
 # NETACAD MODULE 14
+What is the difference between a virus and a worm?  A virus attaches itself to another piece of software and requires user interaction to spread, a worm uses a vulnerability to self-propagate.
+A piece of malware which is disguised as an otherwise useful piece of software is a...  Trojan horse.
+... encrypts data and demands payment for decription.   Ransomware.
+... records keystrokes and other private data for profit.   Spyware.
+... displays unwanted advertising.  Adware.
+Malware intended to cause fear in the user is ...   Scareware.
+Malware intended to hide on a system is like a ...  Rootkit.
+The fraudulent practice of sending emails or other messages purporting to be from reputable companies in order to induce individuals to reveal personal information is ...  Phishing
+#
+... makes detection of malicious traffic harder.    Encryption, tunneling, or traffic fragmentation.

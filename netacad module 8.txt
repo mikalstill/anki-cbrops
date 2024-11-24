@@ -2,3 +2,16 @@
 #html:true
 ################################################################################
 # NETACAD MODULE 8
+What is the ethernet frame types for IPv4?  0x0800.
+What is the ethernet frame types for ARP?   0x080g
+What is the ethernet frame types for IPv6?  0x86DD
+#
+What is a MAC address?  Sometimes called a "Burned In Address" (BIA), the address of the device at the Data Layer.
+How long is a MAC address?  6 bytes.
+What portion of a MAC address identifies the manufacturer of the device?    The first three bytes are the Organizationally Unique Identifier (OUI), which is unique to the manufacturer.
+What portion of a MAC address is unique to the device?  The last three bytes.
+#
+What MAC address is used for the destination of an ARP request? FF:FF:FF:FF:FF:FF (that is, it is broadcast).
+What MAC address is used for the ARP response?  The MAC address of the sender of the ARP request.
+What are two issues with ARP?   The broadcast nature of the traffic can lead to network overhead / floods, especially if a large number of machines are powered on at once. It is also vulnerable to spoofing.
+How does a switch learn MAC addresses?  The switch dynamically learns MAC addresses from the source field of frames, adding them to the to MAC address table. Cisco switches clear entries from the MAC address table after five minutes of inactivity. If the switch receives a frame where it doesn't know the interface to use, it floods the frame out all by the incoming interface. This is called an unknown unicast frame.

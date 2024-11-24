@@ -33,7 +33,7 @@ What is residual risk?	The remaining risk once safeguards and controls have been
 What is a virus?	A self-replicating program which infects hosts to perform undesirable actions. It requires human interaction to replicate.
 What is a worm?	A self-replicating program which does not require human interaction to replicate.
 What is a logic bomb?	Malicious code injected into a legitimate application.
-What is a trojan horse?	A malicious application which uses social engineering to convince the user to install it.
+What is a trojan horse? A malicious application which uses social engineering to convince the user to install it.
 #
 Attacks which gather information are... Reconnaissance attacks.
 Attacks which take advantage of a vulnerability to gain access are...   Access attacks.

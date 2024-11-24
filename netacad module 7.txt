@@ -2,3 +2,24 @@
 #html:true
 ################################################################################
 # NETACAD MODULE 7
+What ICMP messages are used by the ping command?    ICMP echo request and echo reply.
+What are the common IPv4 ICMP messages? echo request / reply; destination unreachable; time exceeded; and route redirection.
+#
+ICMP message code 0 is ...  echo reply.
+ICMP message code 3 is ...  estination unreachable.
+ICMP message code 5 is ...  redirect (use another route).
+ICMP message code 8 is ...  echo request.
+ICMP message code 11 is ...  time / TTL exceeded.
+#
+An ICMP echo reply destination unreachable code 0 is ...   Network unreachable.
+An ICMP echo reply destination unreachable code 1 is ...   Host unreachable.
+An ICMP echo reply destination unreachable code 2 is ...   Protocol unreachable.
+An ICMP echo reply destination unreachable code 3 is ...   Port unreachable.
+You receive an ICMP time exceeded in IPv4 when ...  The TTL field in the IP header reaches 0, having been decremented by each router along the packet's path.
+You receive an ICMP time exceeded in IPv6 when ...  When the hop limit from the IP header has been exceeded.
+#
+ICMPv6 Router Advertisement (RA) messages are used ...  Between a router and an end host. Uses Stateless Address Autoconfiguration (SLAAC). The RA message includes addressing information for the host such as prefix, prefix length, DNS address, and domain name. Sent periodically, or in response to a Router Solicitation (RS) message.
+ICMPv6 Router Solicitation (RS) messages are used ...  Between a router and an end host. Send to prompt a Router Advertisement (RA) message.
+ICMPv6 Neighbor Advertisement (NA) messages are used ...  Between end hosts. Equivalent of ARP request in IPv4 -- the IPv6 address is known, but not the MAC address.
+ICMPv6 Neighbor Solicitation (NS) messages are used ...  Between end hosts. Equivalent to an ARP reply in IPv4. Includes the ethernet devices' MAC address.
+ICMPv6 Duplicate Address Detection (DAD) is used ...    When assigned a global unicast or link-local unicast address, an Neighbor Solicitation (NS) message is sent with its own IPv6 address. If another device on the network has this address, it will respond with a Neighbor Advertisement (NA) message. DAD is not required, but recommended by RFC 4861.
