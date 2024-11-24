@@ -3,13 +3,13 @@
 ################################################################################
 # NETACAD MODULE 7
 What ICMP messages are used by the ping command?;ICMP echo request and echo reply.
-What are the common IPv4 ICMP messages? echo request / reply,; destination unreachable, time exceeded, and route redirection.
+What are the common IPv4 ICMP messages?;echo request / reply, destination unreachable, time exceeded, and route redirection.
 #
-ICMP message code 0 is ...;echo reply.
-ICMP message code 3 is ...;estination unreachable.
-ICMP message code 5 is ...;redirect (use another route).
-ICMP message code 8 is ...;echo request.
-ICMP message code 11 is ...;time / TTL exceeded.
+ICMP message code 0 is ...;Echo reply.
+ICMP message code 3 is ...;Destination unreachable.
+ICMP message code 5 is ...;Redirect (use another route).
+ICMP message code 8 is ...;Echo request.
+ICMP message code 11 is ...;Time / TTL exceeded.
 #
 An ICMP echo reply destination unreachable code 0 is ...;Network unreachable.
 An ICMP echo reply destination unreachable code 1 is ...;Host unreachable.

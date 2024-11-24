@@ -37,6 +37,10 @@ if __name__ == '__main__':
                     _emit_error(ent, 'missing field separator', line)
                     warnings += 1
 
+                if line.find('; ') != -1:
+                    _emit_error(ent, 'whitespace after field separator', line)
+                    warnings += 1
+
                 if len(line.split(';')) > 2:
                     _emit_error(
                         ent,

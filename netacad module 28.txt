@@ -2,3 +2,55 @@
 #html:false
 ################################################################################
 # NETACAD MODULE 28
+Which NIST publication outlines forensic techniques for incident response?;NIST Special Publication 800-86
+What are the NIST Special Publication 800-86 phases?;Collection, examination, analysis, reporting, then repeat.
+What is included in the NIST SP 800-86 collection phase?;Identification of sources of information, acquiring and handling the data, and storage.
+What is included in the NIST SP 800-86 examination phase?;Assessing and extracting relevant information from the data. This might involve decompression, and filtering.
+What is included in the NIST SP 800-86 analysis phase?;Drawing conclusions from the data. Features such as people, places, times, and events might be correlated and documented.
+What is included in the NIST SP 800-86 reporting phase?;Preparing and presenting information that was derived from the analysis. Reporting should be impartial and alternative explanations should be offered if appropriate. Limitations of analysis and problems encountered should be included. Next steps should be discussed.
+#
+What are the types of evidence?;Best, corroborating, indirect.
+"What is ""best evidence""?";evidence in its original state, and provably unaltered. From devices used by the accused (direct evidence), or archives of files that can be proven to be unaltered.
+"What is ""Corroborating evidence""?";Evidence which supports assertions made with the best evidence.
+"What is ""Indirect evidence""?";Evidence that helps establish a hypothesis when combined with the use of other evidence. Also known as circumstantial evidence.
+#
+According to IETF RFC 3227, what is the most volatile form of evidence?;Memory registers, caches.
+According to IETF RFC 3227, what is the second most volatile form of evidence?;Routing table, ARP cache, process table, kernel statistics, RAM.
+Apart from evidence in memory, what are the most volatile to least volatile forms of evidence according to IETF RFC 3227?;Temporary file systems, non-volatile media / fixed and removable storage, remote logging and monitoring data, physical interconnections and topologies, archival media / tape or other backups.
+#
+What should a chain of custody record?;Who discovered and collected the evidence, all details of the handling of the evidence including times, places, and personnel involved, who is primarily responsible for the evidence, when responsibility was assigned, and any changes of custody, and who has physical access while the evidence is stored. Access should be restricted to the most essential personnel.
+#
+When investigating evidence, why do you always work on a copy of the data?;It is important that evidence is preserved, including timestamps. You therefore normally only investigate on a copy of data. Document the process used to make copies of the data. Bit level copies with the same hash are preferred to more indirect copying techniques.
+#
+Speculation should be avoided during...;Attack attribution.
+What are TTPs?;Tactics, Techniques, and Procedures.
+What are examples of TTPs that might help with attack attribution?;Origin of attacking hosts, domains used, code features and tools.
+#
+What does MITRE ATT&CK stand for?;Adversarial Tactics, Techniques, and Common Knowledge.
+What is MITRE ATT&CK?;A global knowledgebase of threat actor behaviours.
+#
+What are the phases of the Lockheed Martin Cyber Kill Chain?;Reconnaissance, Weaponization, Delivery, Exploitation, Installation, Command and Control, Actions on Objectives.
+What occurs during the reconnaissance phase of the Cyber Kill Chain?;Research publicly available information, including details of employees. The attacker selects targets which are neglected or unprotected, as they are more likely to be able to be compromised.
+What occurs during the weaponization phase of the Cyber Kill Chain?;Use the information from reconnaissance to develop a weapon against specific targeted systems or individuals in the organization.
+What occurs during the installation phase of the Cyber Kill Chain?;This step is where the threat actor establishes a back door into the system to allow for continued access to the target. To preserve this backdoor, it is important that remote access does not alert cybersecurity analysts or users. The access method must survive through antimalware scans and rebooting of the computer to be effective. This persistent access can also allow for automated communications, especially effective when multiple channels of communication are necessary when commanding a botnet.
+#
+What are the four components of the Diamond Model of Intrusion?;Adversary (top), Infrastructure (left), Capability (right), Victim (bottom).
+In the Diamond Model, an adversary ... infrastructure.;uses.
+In the Diamond Model, an adversary ... capability.;develops.
+In the Diamond Model, an infrastructure ... victim.;connects to.
+In the Diamond Model, an capability ... victim.;exploits.
+What are the Diamond Model meta-features?;Timestamp, phase, result, direction, methodology, resources.
+#
+Which NIST publication outlines incident response?;NIST Special Publication 800-61r2.
+What organization does NIST SP 800-61r2 recommend be created?;That a Computer Security Incident Response Centre (CSIRC) be created.
+What should a NIST SP 800-61r2 CSIRC maintain?;Policies, plans, and procedures.
+What should be included in the CSIRC policies according to NIST SP 800-61r2?;Statement of management commitment, purpose and objectives of the policy. Scope of the policy. Definition of computer security incidents and related terms. Organizational structure and definition of roles, responsibilities, and levels of authority. Prioritization of severity ratings of incidents. Performance measures. Reporting and contact forms.
+What should be included in the CSIRC plan according to NIST SP 800-61r2?;Mission. Strategies and goals. Senior management approval. Organizational approach to incident response. How the incident response team will communicate with the rest of the organization and with other organizations. Metrics for measuring the incident response capacity. How the program fits into overall organization.
+What should be included in the CSIRC procedures according to NIST SP 800-61r2?;These are typical standard operating procedures (SOPs). These SOPs should be detailed so that the mission and goals of the organization are in mind when these procedures are followed. SOPs minimize errors that may be caused by personnel that are under stress while participating in incident handling.
+What is the incident response lifecycle according to NIST SP 800-61r2?;Preparation. Detection and Analysis. Containment, Eradication, and Recovery. Post-Incident Activities.
+What are incident management stakeholders?;Management. Information assurance. IT Support Legal. Public affairs / media relations. HR. Business continuity planners. Physical security and facilities management.
+#
+What is CMMC?;The Cybersecurity Maturity Model Certification (CMMC) framework was created to assess the ability of organizations that perform functions for the U.S. Department of Defense (DoD) to protect the military supply chain from disruptions or losses due to cybersecurity incidents.
+#
+What are the steps of the NIST Cyber Security Framework?;Identify, protect, detect, respond, recover.
+What are the steps of the NIST Incident Response Lifecycle?;Preparation, detection and analysis, containment / eradication / recovery, post incident review.
